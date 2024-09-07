@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Metadados (não ficam visiveis)
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prontuario</title>
+</head>
+
+<!--
+Corpo para desenvolver
+-->
+<body>
+    <!--
+    Cabeçalho da página
+    -->
+    <header>
+        <h1>Prontuario Médico</h1>
+    </header>
+    <!--
+    Conteudo principal da página
+    -->
+    <main>
+        <section>
+            <input type="text" placeholder="Digite sua busca" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>    
+        </section>
+        <!--
+            class é referenciada com "." no CSS
+        -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    
+    <!--
+    Rodapé da página
+    -->
+    <footer>
+        <p>2024 - Prontuário médico. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: matheus@prontuario@gmail.com</p>
+    </footer>
+    <!--
+    Script no final faz com que a tela seja carregada primeiro e posteriormente o script seja executado
+    -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
